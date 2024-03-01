@@ -1,28 +1,45 @@
 ---
-import Container from "./Container.astro"
-
+import Container from "./Container.astro";
 ---
 
 <div class="relative" id="home">
-    <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
-        <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
-        <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+  <div
+    aria-hidden="true"
+    class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+  >
+    <div
+      class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"
+    >
     </div>
-    <Container>
-        <div class="relative pt-36 ml-auto">
-            <div class="lg:w-2/3 text-center mx-auto">
-                <h1 class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">Grow on twitter by <span class="text-primary ">Replying more</span></h1>
-                <p class="mt-8 text-gray-700 dark:text-gray-300">ReplyMore is an extension that helps new accounts grow on twitter by replying to other accounts. It let's you set a daily goal to gamify the experience, filter early viral posts to engage on, track how much you're replying vs time spent on the app.</p> 
-                <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
-                    <a
-                      href="https://chromewebstore.google.com/detail/replymore/ipfbflmifkonfidogacgclmiglocoeee"
-                      class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
-                    >
-                      <span class="relative text-base font-semibold text-white"
-                        >Install for Chrome</span
-                      >
-                    </a>
-                    <!-- <a
+    <div
+      class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"
+    >
+    </div>
+  </div>
+  <Container>
+    <div class="relative pt-36 ml-auto">
+      <div class="lg:w-2/3 text-center mx-auto">
+        <h1
+          class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl"
+        >
+          Grow on twitter / 𝕏 by <span class="text-primary">Replying more</span>
+        </h1>
+        <p class="mt-8 text-gray-700 dark:text-gray-300">
+          ReplyMore is an extension that helps new accounts grow on twitter / 𝕏
+          by replying to other accounts. It let's you set a daily goal to gamify
+          the experience, filter early viral posts to engage on, track how much
+          you're replying vs time spent on the app.
+        </p>
+        <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
+          <a
+            href="https://chromewebstore.google.com/detail/replymore/ipfbflmifkonfidogacgclmiglocoeee"
+            class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+          >
+            <span class="relative text-base font-semibold text-white"
+              >Install for Chrome</span
+            >
+          </a>
+          <!-- <a
                       href="#pricing"
                       class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
                     >
@@ -31,24 +48,34 @@ import Container from "./Container.astro"
                         >Pricing</span
                       >
                     </a> -->
-                </div>
-                <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Pay once, use forever</p>
-                <div class="hidden py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between">
-                    <div class="text-left">
-                        <h6 class="text-lg font-semibold text-gray-700 dark:text-white">Gamify replying</h6>
-                        <p class="mt-2 text-gray-500">Track your progress</p>
-                    </div>
-                    <div class="text-left">
-                        <h6 class="text-lg font-semibold text-gray-700 dark:text-white">View posts performance</h6>
-                        <p class="mt-2 text-gray-500">Expose you replies to more views</p>
-                    </div>
-                    <div class="text-left">
-                        <h6 class="text-lg font-semibold text-gray-700 dark:text-white">Filter posts to reply on</h6>
-                        <p class="mt-2 text-gray-500">Prioritize recent popular posts</p>
-                    </div>
-                </div>
-            </div>
-          <!-- <div class="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6">
+        </div>
+        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+          Pay once, use forever
+        </p>
+        <div
+          class="hidden py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between"
+        >
+          <div class="text-left">
+            <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
+              Gamify replying
+            </h6>
+            <p class="mt-2 text-gray-500">Track your progress</p>
+          </div>
+          <div class="text-left">
+            <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
+              View posts performance
+            </h6>
+            <p class="mt-2 text-gray-500">Expose you replies to more views</p>
+          </div>
+          <div class="text-left">
+            <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
+              Filter posts to reply on
+            </h6>
+            <p class="mt-2 text-gray-500">Prioritize recent popular posts</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6">
                 <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
                     <img src="./images/clients/microsoft.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
                   </div>
@@ -68,6 +95,6 @@ import Container from "./Container.astro"
                     <img src="./images/clients/google-cloud.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
                 </div>
               </div> -->
-        </div>
-    </Container>
+    </div>
+  </Container>
 </div>
