@@ -18,17 +18,32 @@ import Container from "./Container.astro";
   </div>
   <Container>
     <div class="relative pt-36 ml-auto">
-      <div class="lg:w-2/3 text-center mx-auto">
-        <h1
-          class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl"
-        >
-          Grow on twitter / 𝕏 by <span class="text-primary">Replying more</span>
-        </h1>
-        <p class="mt-8 text-gray-700 dark:text-gray-300">
-          An extension that let's you track how much you're replying vs time
-          spent on the app, set a daily goal to gamify the experience, filter
-          early popular posts so that your replies get viewed
-        </p>
+      <div class="text-center gap-10 flex content-between mx-auto">
+        <div>
+          <h1
+            class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl"
+          >
+            Grow on twitter / 𝕏 by <span class="text-primary"
+              >Replying more</span
+            >
+          </h1>
+          <p class="mt-8 text-gray-700 dark:text-gray-300">
+            An extension that let's you track how much you're replying vs time
+            spent on the app, set a daily goal to gamify the experience, filter
+            early popular posts so that your replies get viewed
+          </p>
+        </div>
+        <div class="p-1 bg-gray-800 rounded h-fit">
+          <iframe
+            width="400"
+            height="225"
+            src="https://www.youtube.com/embed/3VHwUXCaO_8"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""></iframe>
+        </div>
+      </div>
+      <div class="mx-0-auto text-center">
         <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
           <a
             href="https://chromewebstore.google.com/detail/replymore/ipfbflmifkonfidogacgclmiglocoeee"
@@ -51,30 +66,31 @@ import Container from "./Container.astro";
         <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
           Start 3-day free trial
         </p>
-        <div
-          class="hidden py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between"
-        >
-          <div class="text-left">
-            <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
-              Gamify replying
-            </h6>
-            <p class="mt-2 text-gray-500">Track your progress</p>
-          </div>
-          <div class="text-left">
-            <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
-              View posts performance
-            </h6>
-            <p class="mt-2 text-gray-500">Expose you replies to more views</p>
-          </div>
-          <div class="text-left">
-            <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
-              Filter posts to reply on
-            </h6>
-            <p class="mt-2 text-gray-500">Prioritize recent popular posts</p>
-          </div>
+      </div>
+      <div
+        class="hidden m-20 py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between"
+      >
+        <div class="text-left">
+          <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
+            Gamify replying
+          </h6>
+          <p class="mt-2 text-gray-500">Track your progress</p>
+        </div>
+        <div class="text-left">
+          <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
+            View posts performance
+          </h6>
+          <p class="mt-2 text-gray-500">Expose you replies to more views</p>
+        </div>
+        <div class="text-left">
+          <h6 class="text-lg font-semibold text-gray-700 dark:text-white">
+            Filter posts to reply on
+          </h6>
+          <p class="mt-2 text-gray-500">Prioritize recent popular posts</p>
         </div>
       </div>
-      <!-- <div class="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6">
+    </div>
+    <!-- <div class="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6">
                 <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
                     <img src="./images/clients/microsoft.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
                   </div>
@@ -94,6 +110,5 @@ import Container from "./Container.astro";
                     <img src="./images/clients/google-cloud.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
                 </div>
               </div> -->
-    </div>
   </Container>
 </div>
