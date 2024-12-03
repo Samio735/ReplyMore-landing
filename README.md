@@ -2,7 +2,7 @@
 
 ReplyMore is a An extension that let's you track how much you're replying vs time spent on the app, set a daily goal to gamify the experience, filter early popular posts so that your replies get viewed.
 
-This landing page was an Astro project made using the astrolus [template](https://astro.build/themes/details/astrolus/)
+This landing page was an Astro project made using the [astrolus template](https://astro.build/themes/details/astrolus/)
 
 
 ## 🧞 Commands
