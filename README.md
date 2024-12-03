@@ -1,33 +1,9 @@
-# astrolus
+# ReplyMore Landing Page
 
-A page template built with astro and tailwindcss using tailus blocks.
+ReplyMore is a An extension that let's you track how much you're replying vs time spent on the app, set a daily goal to gamify the experience, filter early popular posts so that your replies get viewed.
 
-![Tailus astro based theme](./public/astrolus-light.png)
-![Tailus astro based dark theme](./public/astrolus-dark.png)
+This landing page was an Astro project made using the astrolus [template](https://astro.build/themes/details/astrolus/)
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
