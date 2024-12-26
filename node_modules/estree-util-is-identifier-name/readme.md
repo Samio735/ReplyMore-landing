@@ -17,9 +17,9 @@
 *   [Install](#install)
 *   [Use](#use)
 *   [API](#api)
-    *   [`name(value)`](#namevalue)
-    *   [`start(code)`](#startcode)
     *   [`cont(code)`](#contcode)
+    *   [`name(name)`](#namename)
+    *   [`start(code)`](#startcode)
 *   [Types](#types)
 *   [Compatibility](#compatibility)
 *   [Related](#related)
@@ -39,7 +39,7 @@ You can use this utility when generating IDs from strings or parsing IDs.
 ## Install
 
 This package is [ESM only][esm].
-In Node.js (version 12.20+, 14.14+, 16.0+, or 18.0+), install with [npm][]:
+In Node.js (version 14.14+ and 16.0+), install with [npm][]:
 
 ```sh
 npm install estree-util-is-identifier-name
@@ -62,7 +62,7 @@ In browsers with [`esm.sh`][esmsh]:
 ## Use
 
 ```js
-import {name, start, cont} from 'estree-util-is-identifier-name'
+import {cont, name, start} from 'estree-util-is-identifier-name'
 
 name('$something69') // => true
 name('69') // => false
@@ -74,22 +74,48 @@ cont(48) // => true (character code for `0`)
 
 ## API
 
-This package exports the identifiers `name`, `start`, and `cont`.
+This package exports the identifiers [`cont`][cont], [`name`][name], and
+[`start`][start].
 There is no default export.
-
-### `name(value)`
-
-Checks if `value` (`string`) is a valid identifier name (`boolean`).
-
-### `start(code)`
-
-Checks if the given character code (`number`) can start an identifier
-(`boolean`).
 
 ### `cont(code)`
 
-Checks if the given character code (`number`) can continue an identifier
-(`boolean`).
+Checks if the given character code can continue an identifier.
+
+###### Parameters
+
+*   `code` (`number`)
+    — character code to check
+
+###### Returns
+
+Whether `code` can continue an identifier (`boolean`).
+
+### `name(name)`
+
+Checks if the given value is a valid identifier name.
+
+###### Parameters
+
+*   `name` (`string`)
+    — identifier to check
+
+###### Returns
+
+Whether `name` can be an identifier (`boolean`).
+
+### `start(code)`
+
+Checks if the given character code can start an identifier.
+
+###### Parameters
+
+*   `code` (`number`)
+    — character code to check
+
+###### Returns
+
+Whether `code` can start an identifier (`boolean`).
 
 ## Types
 
@@ -100,7 +126,7 @@ It exports no additional types.
 
 Projects maintained by the unified collective are compatible with all maintained
 versions of Node.js.
-As of now, that is Node.js 12.20+, 14.14+, 16.0+, and 18.0+.
+As of now, that is Node.js 14.14+ and 16.0+.
 Our projects sometimes work with older versions, but this is not guaranteed.
 
 ## Related
@@ -171,3 +197,9 @@ abide by its terms.
 [coc]: https://github.com/syntax-tree/.github/blob/main/code-of-conduct.md
 
 [estree]: https://github.com/estree/estree
+
+[cont]: #contcode
+
+[name]: #namename
+
+[start]: #startcode
